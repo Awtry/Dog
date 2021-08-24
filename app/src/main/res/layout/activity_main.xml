@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Segundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnFirstAction"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        tools:text="Nya" />
+
+    <Button
+        android:id="@+id/btnFirstAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="makeSound"
+        android:text="Sound"
+        app:layout_constraintBottom_toTopOf="@+id/btnPrevious"
+        app:layout_constraintEnd_toStartOf="@id/btnSecondAction"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSecondAction"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:onClick="play"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="@id/btnFirstAction"
+        app:layout_constraintEnd_toStartOf="@id/btnThirdAction"
+        app:layout_constraintStart_toEndOf="@id/btnFirstAction" />
+
+    <Button
+        android:id="@+id/btnThirdAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="eat"
+        android:text="Eat"
+        app:layout_constraintBottom_toBottomOf="@id/btnFirstAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnSecondAction" />
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getPreviousPet"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnNew"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNew"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:onClick="createNewPet"
+        android:text="New"
+        app:layout_constraintBottom_toBottomOf="@id/btnPrevious"
+        app:layout_constraintEnd_toStartOf="@id/btnNext"
+        app:layout_constraintStart_toEndOf="@id/btnPrevious" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNextPet"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="@id/btnPrevious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnNew" />
+
+    <TextView
+        android:id="@+id/Principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/Segundo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="447dp"
+        tools:text="Nya"/>
+
+    <TextView
+        android:id="@+id/Tercero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="200dp"
+        android:text="Nya"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Segundo"
+        tools:text="Nya"/>
+
+    <TextView
+        android:id="@+id/Cuarto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="114dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnSecondAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Segundo"
+        app:layout_constraintVertical_bias="0.897"
+        tools:text="Nya" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
