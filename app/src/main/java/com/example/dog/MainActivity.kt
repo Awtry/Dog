@@ -14,33 +14,34 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        txtmordida = findViewById(R.id.Tercero)
+        txtSonido = findViewById(R.id.Segundo)
+        textoSalida = findViewById(R.id.Principal)
+        txtDisfrute = findViewById(R.id.Cuarto)
 
     }
 
     val Orden = mutableListOf<Int?>();
-
+    lateinit var txtmordida: TextView
+    lateinit var txtSonido: TextView
+    lateinit var txtDisfrute: TextView
+    lateinit var textoSalida: TextView
 
     fun Nombre_Animal(Nombre: String, Edad: Int, Raza: String, Color: String, Tipo: String){
-        lateinit var textoSalida: TextView
-        textoSalida = findViewById(R.id.Principal)
+
+
         textoSalida.text = "Me llamo ${Nombre}, tengo ${Edad} años,  soy un ${Tipo} \n " +
                 " mi raza es ${Raza}, así como mi " +
                 " color es ${Color}";
     }
 
-    lateinit var txtmordida: TextView
-    lateinit var txtSonido: TextView
-    lateinit var txtDisfrute: TextView
-
-
-
     fun mordida(masticado: String){
-        txtmordida = findViewById(R.id.Tercero)
+
         txtmordida.text = "Ingiero: ${masticado}";
     }
 
     fun Alarido(Salida: String){
-        txtSonido = findViewById(R.id.Segundo)
+
         txtSonido.text = "Y yo digo: ${Salida}";
     }
 
@@ -64,7 +65,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Disfrute(Cosa: String){
-        txtDisfrute = findViewById(R.id.Cuarto)
+
         txtDisfrute.text = "Y juego con: ${Cosa}";
     }
 
